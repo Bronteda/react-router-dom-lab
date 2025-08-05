@@ -17,6 +17,10 @@ const NavBar = () => {
             {/* mailbox form */}
             <Link to="/new-mailbox">New Mailbox</Link>
           </li>
+          <li>
+            {/* New Letter - form to add a letter  */}
+            <Link to="/new-letter">New Letter</Link>
+          </li>
         </ul>
       </nav>
     </>

@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const MailboxForm = (props) => {
-  const [formData, setFormData] = useState([]);
+  const [formData, setFormData] = useState(initialState);
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -35,7 +35,6 @@ const MailboxForm = (props) => {
         />
         <label htmlFor="boxSize">Enter a Box Size:</label>
         <select
-          type="number"
           id="boxSize"
           name="boxSize"
           value={formData.boxSize}
